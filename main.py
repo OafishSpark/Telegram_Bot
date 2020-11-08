@@ -1,6 +1,8 @@
 import telebot
 
-TOKEN = ''
+tokenfile = open("tokenfile.txt", "r")
+
+TOKEN = tokenfile.readline()
 
 bot = telebot.TeleBot (TOKEN)
 
